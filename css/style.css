@@ -45,7 +45,7 @@
 
   .wrapper {
     width: min(50rem, 100%);
-    background-color: black;
+    background-color: #101010;
     margin-inline: auto;
     padding-inline: 2.4rem;
   }
@@ -115,10 +115,10 @@
     flex-wrap: wrap;
     position: absolute;
 
-    top: 11vh;
+    top: 9vh;
     right: 0;
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     gap: 1.4rem;
     background: #101010;
 
