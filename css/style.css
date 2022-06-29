@@ -174,11 +174,16 @@
     width: 100vw;
   }
 
+  #intro .wrapper {
+    background-color: aqua;
+  }
+
 .content-a {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 96vh;
+    
 
     color: #fff;
 }
