@@ -31,10 +31,12 @@ class MobileNavbar {
     init() {
       if (this.mobileMenu) {
         this.addClickEvent();
-      }
+      } 
       return this;
     }
+
   }
+
   
   const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
@@ -42,3 +44,5 @@ class MobileNavbar {
     ".menu li",
   );
   mobileNavbar.init();
+
+ 

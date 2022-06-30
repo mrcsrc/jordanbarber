@@ -7,6 +7,14 @@
   
   :root {
     font-size: 62.5%; /* 1rem = 10px */
+
+    --bg-blue: #179df7;
+    --bg-black: #101010;
+    
+    --paragraph: #fff;
+    --paragraph-hover: #7fc7f7;
+
+    --btn-hover: #0063a5;
   }
   
   html {
@@ -45,19 +53,19 @@
 
   .wrapper {
     width: min(50rem, 100%);
-    background-color: #101010;
+    background-color: var(--bg-black);
     margin-inline: auto;
     padding-inline: 2.4rem;
   }
 
   .button {
-    background: #179df7;
+    background: var(--bg-blue);
     border: none;
     
     padding: 1rem 3rem;
     width: fit-content;
 
-    color: #fff;
+    color: var(--paragraph);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.4rem;
@@ -77,13 +85,9 @@
   .mobile-menu div {
     width: 3.2rem;
     height: 0.2rem;
-    background-color: #fff;
+    background-color: var(--bg-blue);
     margin: .8rem;
-  }
-
-  /* CUSTOM COLORS */
-
-  
+  }  
 
   /* NAV ====================== */
 
@@ -104,7 +108,7 @@
   }
 
   nav .logo {
-    color: #fff;
+    color: var(--paragraph);
     font-weight: 700;
   }
 
@@ -120,7 +124,7 @@
     width: 100vw;
     height: 100vh;
     gap: 1.4rem;
-    background: #101010;
+    background: var(--bg-black);
 
     transform: translateX(100%);
     transition:  transform 0.4s ease-in;
@@ -149,7 +153,7 @@
   }
 
   nav .menu a {
-    color: #fff;
+    color: var(--paragraph);
     text-transform: uppercase;
     
     font-weight: 700;
@@ -160,12 +164,12 @@
   }
 
   nav .menu ul li a:hover {
-    color: #7fc7f7;
+    color: var(--paragraph-hover);
     transition: 300ms
   }
 
   nav .button:hover {
-    background-color: #0063a5;
+    background-color: var(--btn-hover);
     transition: background 300ms
   }
 
@@ -175,7 +179,7 @@
   }
 
   #intro .wrapper {
-    background-color: aqua;
+    background-color: var(--bg-blue);
   }
 
 .content-a {
@@ -185,7 +189,7 @@
     height: 96vh;
     
 
-    color: #fff;
+    color: var(--paragraph);
 }
 
 .bg-logo {
@@ -205,7 +209,7 @@
     display: flex;
     justify-content: flex-end;
 
-    margin-top: -4rem;
+    margin-top: -8.6rem;
 }
 
 .bg-person img {
